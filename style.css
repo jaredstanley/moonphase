@@ -1,0 +1,123 @@
+body{
+	background-color: #000;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+#container{
+	
+	width:320px;
+	height: 450px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: #000;
+	background: url('bg.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+	color: #fff;
+
+}
+
+#apptitle{
+	width: 300px;
+	margin: auto;
+}
+
+#apptitle #title{
+	width: 228px;
+	margin: auto;
+	font-size: 32px;
+
+}
+#apptitle #subtitle{
+	width: 86px;
+	margin: auto;
+
+}
+
+#panels{
+	
+	width:300px;
+	margin: auto;
+}
+
+#panelleft{
+	float: left;
+	padding-left: 13px;
+	padding-right: 4px
+
+}
+
+#panelleft #dayofweek{
+
+	padding-left: 10px;
+	padding-top: 10px;
+	position: absolute;
+}
+
+#panelleft #date{
+
+	padding-left: 10px;
+	padding-top: 30px;
+	position: absolute;
+	font-size: 72px;
+}
+
+#panelright{
+	float: left;
+}
+
+#panelright #month{
+
+	padding-left: 10px;
+	padding-top: 10px;
+	position: absolute;
+}
+
+#panelright #year{
+
+	padding-left: 10px;
+	padding-top: 30px;
+	position: absolute;
+	
+}
+
+#panelright #status{
+
+	padding-left: 10px;
+	padding-top: 50px;
+	position: absolute;
+	width: 100px;
+	
+}
+
+
+
+
+#iconstrip{
+
+width: 274px;
+margin: auto;
+position: relative;
+}
+
+#datepicker{
+	position: absolute;
+}
+
+#moon{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pointer{
+	position:absolute;
+	margin-top: 113px;
+}
+
