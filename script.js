@@ -46,6 +46,12 @@ function doTouchMove(e){
 }
 
 
+$('#nativedate').change = function(){
+	console.log("derfe");
+}
+
+// <input type="date" onblur="testdate(this)" onchange="testdate(this,true)" />
+
 $('#datepicker').datepicker({
    onSelect: function(dateText, inst) { 
    		hideCalendar();
@@ -58,6 +64,10 @@ $('#datepicker').datepicker({
 	inline: true
 });
 
+function doit(){
+
+	console.log("do it date changed");
+}
 
 hideCalendar();
 
@@ -69,12 +79,16 @@ $('#moon').click(function(){
 });
 
 function showCalendar(){
-	$('#datepicker').show();
+	// $('#datepicker').show();
+	console.log("showasdfkjewr");
+	$('#nativedate').show();
 	calIsVisible = true;
 }
 
 function hideCalendar(){
-	$('#datepicker').hide();
+	// $('#datepicker').hide();
+	$('#nativedate').hide();
+	
 	calIsVisible = false;
 }
 
