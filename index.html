@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html manifest="moon.appcache">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="apple-touch-icon" href="img/touch_icon.png">
-		<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+		<!-- <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'> -->
 		<title>Moonphase Offline Calendar</title>
 		
 		<link type="text/css" href="css/overcast/jquery-ui-1.8.24.custom.css" rel="stylesheet" />
@@ -20,16 +20,9 @@
 	<body>	
 
 		<div id="container">
-			<input id="nativedate" type="date" onchange="do2()"/>	
-			<!-- <div id="datepicker"></div> -->
-			<script>
-				function do1(){
-					console.log("do1");
-				}
-				function do2(){
-					console.log("do2");
-				}
-			</script>
+			<!-- <input id="nativedate" type="date" onchange="do2()"/>	 -->
+			<div id="datepicker"></div>
+			
 			<div id="apptitle">
 				<div id="title">MOON PHASE</div>
 				<div id="subtitle">CALENDAR</div>

@@ -45,13 +45,6 @@ function doTouchMove(e){
 	e.preventDefault();
 }
 
-
-$('#nativedate').change = function(){
-	console.log("derfe");
-}
-
-// <input type="date" onblur="testdate(this)" onchange="testdate(this,true)" />
-
 $('#datepicker').datepicker({
    onSelect: function(dateText, inst) { 
    		hideCalendar();
@@ -64,10 +57,6 @@ $('#datepicker').datepicker({
 	inline: true
 });
 
-function doit(){
-
-	console.log("do it date changed");
-}
 
 hideCalendar();
 
@@ -79,16 +68,14 @@ $('#moon').click(function(){
 });
 
 function showCalendar(){
-	// $('#datepicker').show();
-	console.log("showasdfkjewr");
-	$('#nativedate').show();
+	//console.log('show Calendar');
+	$('#datepicker').show();
 	calIsVisible = true;
 }
 
 function hideCalendar(){
-	// $('#datepicker').hide();
-	$('#nativedate').hide();
-	
+	//console.log('hide calendar');
+	$('#datepicker').hide();
 	calIsVisible = false;
 }
 
@@ -165,5 +152,6 @@ function millsToDays(mills){
 }
 
 });
+
 
 

@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "biko";
+  src: url(biko.otf) format("opentype");
+}
+
+
 body{
 	background-color: #000;
 	margin: 0px;
 	padding: 0px;
 	overflow: auto;
-	font-family: 'Julius Sans One', sans-serif;
+	font-family: 'biko', sans-serif;
 }
 
 #container{
@@ -32,11 +38,13 @@ body{
 	width: 228px;
 	margin: auto;
 	font-size: 32px;
+	letter-spacing: 2px;
 
 }
 #apptitle #subtitle{
 	width: 86px;
 	margin: auto;
+	letter-spacing: 2px;
 
 }
 
