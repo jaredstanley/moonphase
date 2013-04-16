@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 
-var moonLabelsArr = ["Full Moon",
-				"Waning Gibbous",
-				"Third Quarter",
-				"Waning Crescent",
-				"New Moon",
-				"Waxing Crescent",
-				"First Quarter",
-				"Waxing Gibbous"
+var moonLabelsArr = ["full moon",
+				"waning gibbous",
+				"third quarter",
+				"waning crescent",
+				"new moon",
+				"waxing crescent",
+				"first quarter",
+				"waxing gibbous"
 				];
 var origDate = new Date(2012, 7, 31);
 var synodicMonth = 29.530588853;
@@ -20,8 +20,8 @@ var day;
 var dayOfWeek; 
 var year;
 
-var dowArray = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-var monthArray = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+var dowArray = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+var monthArray = ['january','february','march','april','may','june','july','august','september','october','november','december'];
 
 var calIsVisible = false;
 
@@ -88,14 +88,18 @@ function showDate(d){
     //console.log(parseInt(calculateDateAndPhase( d )*100));
     
     var layerToShow = parseInt(Math.floor(pct*totalFrames));
-    var labelToShow = parseInt(Math.round(pct*moonLabelsArr.length));
+    console.log(layerToShow+" pct="+pct);
+    var labelToShow = parseInt(Math.floor(pct*moonLabelsArr.length));
    // $('#date').html(labelToShow+" layer #"+layerToShow+" "+parseInt(pct*100)+"%");
     //$('#date').append("<strong> "+moonLabelsArr[labelToShow]+" </strong>");
+    console.log('test '+ moonLabelsArr[labelToShow]+" "+ labelToShow);
+    var labelSplit = moonLabelsArr[labelToShow].replace(' ', '<br />');
     $('#panelleft #dayofweek').html(dowArray[dayOfWeek]);
     $('#panelleft #date').html(day);
     $('#panelright #month').html(monthArray[month-1]);
     $('#panelright #year').html(year);
-    $('#panelright #status').html(moonLabelsArr[labelToShow]);
+    console.log(labelSplit);
+    $('#panelright #status').html(labelSplit);
     setPointer();
 
     $('#moon .phase').eq(layerToShow).show();

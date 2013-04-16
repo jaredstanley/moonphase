@@ -1,6 +1,9 @@
 @font-face {
-  font-family: "biko";
-  src: url(biko.otf) format("opentype");
+ /* font-family: "biko";
+  src: url(biko.otf) format("opentype");*/
+
+  font-family: "neutra";
+  src: url(NeutraDispBoldAlt.otf) format("opentype");
 }
 
 
@@ -9,7 +12,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	overflow: auto;
-	font-family: 'biko', sans-serif;
+	font-family: 'neutra', sans-serif;
 }
 
 #container{
@@ -35,17 +38,17 @@ body{
 }
 
 #apptitle #title{
-	width: 228px;
+	width: 281px;
 	margin: auto;
 	font-size: 32px;
-	letter-spacing: 2px;
+	letter-spacing: 8px;
 
 }
 #apptitle #subtitle{
-	width: 86px;
+	width: 69px;
 	margin: auto;
-	letter-spacing: 2px;
-
+	letter-spacing: 0px;
+	font-size: 20px;
 }
 
 #panels{
@@ -57,50 +60,59 @@ body{
 #panelleft{
 	float: left;
 	padding-left: 13px;
-	padding-right: 4px
+	padding-right: 4px;
+	position: relative;
 
 }
 
 #panelleft #dayofweek{
 
-	padding-left: 10px;
-	padding-top: 10px;
 	position: absolute;
+	width: 135px;
+	text-align: center;
+	top: 7px;
+	font-size: 21px;
 }
 
 #panelleft #date{
 
-	padding-left: 10px;
-	padding-top: 30px;
 	position: absolute;
-	font-size: 72px;
+	font-size: 75px;
+	top: 26px;
+	left: 50px;
 }
 
 #panelright{
 	float: left;
+	position: relative;
 }
 
 #panelright #month{
 
-	padding-left: 10px;
-	padding-top: 10px;
+	top: 7px;
 	position: absolute;
+	margin-left: 10px;
+	width: 135px;
+	font-size: 21px;
 }
 
 #panelright #year{
 
 	padding-left: 10px;
-	padding-top: 30px;
+	padding-top: 28px;
 	position: absolute;
+	font-size: 21px
 	
 }
 
 #panelright #status{
 
 	padding-left: 10px;
-	padding-top: 50px;
+	padding-top: 60px;
 	position: absolute;
-	width: 100px;
+	width: 136px;
+	line-height: 13px;
+	font-size: 21px;
 	
 }
 
