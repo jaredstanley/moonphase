@@ -88,17 +88,17 @@ function showDate(d){
     //console.log(parseInt(calculateDateAndPhase( d )*100));
     
     var layerToShow = parseInt(Math.floor(pct*totalFrames));
-    console.log(layerToShow+" pct="+pct);
+    // console.log(layerToShow+" pct="+pct);
     var labelToShow = parseInt(Math.floor(pct*moonLabelsArr.length));
    // $('#date').html(labelToShow+" layer #"+layerToShow+" "+parseInt(pct*100)+"%");
     //$('#date').append("<strong> "+moonLabelsArr[labelToShow]+" </strong>");
-    console.log('test '+ moonLabelsArr[labelToShow]+" "+ labelToShow);
+    // console.log('test '+ moonLabelsArr[labelToShow]+" "+ labelToShow);
     var labelSplit = moonLabelsArr[labelToShow].replace(' ', '<br />');
     $('#panelleft #dayofweek').html(dowArray[dayOfWeek]);
     $('#panelleft #date').html(day);
     $('#panelright #month').html(monthArray[month-1]);
     $('#panelright #year').html(year);
-    console.log(labelSplit);
+    // console.log(labelSplit);
     $('#panelright #status').html(labelSplit);
     setPointer();
 
